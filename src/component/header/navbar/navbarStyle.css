@@ -1,0 +1,12 @@
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 310px 8px 310px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar img{
+    margin-bottom: -5px;
+}
