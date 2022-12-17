@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,7 +22,7 @@ const NextBtn=(props)=>{
     </div>
   )
 }
-const MultiItemCorousel = ({products,title,timer}) => {
+const Advertisement = ({products,title,timer}) => {
   var settings = {
     // dots: true,
     // infinite: false,
@@ -95,9 +95,13 @@ const MultiItemCorousel = ({products,title,timer}) => {
     )
   }
   const timerURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg';
+  
+    const imgurl = 'https://rukminim1.flixcart.com/fk-p-flap/464/708/image/8e99ee0939987d03.jpg?q=70';
   return (
-    <>
-    <div className='slider'>
+    <div className='advertise'>
+      <div className='first-sec'>
+        {/* Start */}
+        <div className='slider1'>
       <div className="multi-corousel">
         <div className="top-timeleft">
           <div className="deal-sec">{title}</div>
@@ -122,7 +126,7 @@ const MultiItemCorousel = ({products,title,timer}) => {
         {products.map((item) => {
           return (
             <Link to={`product/${item.id}`}>
-              <div className="carousel-item">
+            <div className="carousel-item">
               <Cart item={item}/>
             </div>
             </Link>
@@ -132,9 +136,14 @@ const MultiItemCorousel = ({products,title,timer}) => {
         </div>
       </div>
       </div>
-    </>
-  );
-};
+      {/* End */}
+      </div>
+      <div className='second-sec'>
+        <img src={imgurl} alt="ad" style={{width:217}}/>
+      </div>
+    </div>
+  )
+}
 const Cart=({item})=>{
   return(
     <div className="corousel-image">
@@ -148,4 +157,5 @@ const Cart=({item})=>{
     </div>
   )
 }
-export default MultiItemCorousel;
+
+export default Advertisement

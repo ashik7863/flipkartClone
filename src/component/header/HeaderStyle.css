@@ -4,6 +4,8 @@
     width: 100%;
     height: 56px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-sec{
     display: flex;
@@ -11,6 +13,7 @@
     margin-left: 19%;
     flex-direction: column;
     justify-content: center;
+    width: 100px;
 }
 .logo-sec img{
     width: 75px;

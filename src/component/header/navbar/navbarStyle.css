@@ -1,12 +1,19 @@
-.navbar{
+.nav-header{
+    display: flex;
+    justify-content: center;
     background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    height: 100px;
+}
+.navbar{
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 8px 310px 8px 310px;
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
     font-size: 14px;
     font-weight: 500;
+    column-gap: 50px;
+    text-align: center;
 }
 .navbar img{
-    margin-bottom: -5px;
+    width: 100%;
 }

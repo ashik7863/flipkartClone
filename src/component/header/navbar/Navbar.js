@@ -3,7 +3,8 @@ import{navData}from './NavbarData'
 import './navbarStyle.css';
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className='nav-header'>
+      <div className='navbar'>
       {
         navData.map((menu)=>(
             <div>
@@ -12,6 +13,7 @@ const Navbar = () => {
             </div>
         ))
       }
+    </div>
     </div>
   )
 }

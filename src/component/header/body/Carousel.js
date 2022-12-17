@@ -21,11 +21,12 @@ const NextBtn=(props)=>{
   )
 }
 const Carousel = () => {
+  
   return (
     <>
       <Slider
         autoplay
-        autoplaySpeed={3000}
+        autoplaySpeed={4000}
         infinite
         prevArrow={<PreviousBtn/>}
         nextArrow={<NextBtn/>}
