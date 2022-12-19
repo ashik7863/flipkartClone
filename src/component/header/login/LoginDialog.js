@@ -63,7 +63,7 @@ const LoginDialog = ({ open, setOpen }) => {
       console.log(phone.length)
       toast.error("Mobile No Should be 10 Character!", toastOption);
       return false;
-    } else if (password.length < 4) {
+    } else if (password.length < 8) {
       toast.error(
         "Password must be equal or more than 8 character!",
         toastOption
