@@ -63,7 +63,7 @@ const LoginDialog = ({ open, setOpen }) => {
       console.log(phone.length)
       toast.error("Mobile No Should be 10 Character!", toastOption);
       return false;
-    } else if (password.length < 8) {
+    } else if (password.length < 4) {
       toast.error(
         "Password must be equal or more than 8 character!",
         toastOption
@@ -78,7 +78,7 @@ const LoginDialog = ({ open, setOpen }) => {
       setIsLoading(true);
       const { firstname, lastname, username, email, password, phone } =
         registration;
-      const {data} = await axios.post("https://flipkartbackend-production-cbba.up.railway.app/signup", {
+      const {data} = await axios.post("https://vercel-flipkart-backend-fquc.vercel.app/signup", {
         firstname,
         lastname,
         username,
@@ -116,7 +116,7 @@ const LoginDialog = ({ open, setOpen }) => {
       setIsLoading(true);
       const { logEmail,logPassword } =login;
        
-      const {data} = await axios.post("https://flipkartbackend-production-cbba.up.railway.app/login", {
+      const {data} = await axios.post("https://vercel-flipkart-backend-fquc.vercel.app/login", {
         logEmail,logPassword
       });
       if (data.status === false) {

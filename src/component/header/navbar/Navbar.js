@@ -6,8 +6,8 @@ const Navbar = () => {
     <div className='nav-header'>
       <div className='navbar'>
       {
-        navData.map((menu)=>(
-            <div>
+        navData.map((menu,idx)=>(
+            <div key={idx}>
                 <img src={menu.url} alt={menu.text} style={{width:64}}/>
                 <div>{menu.text}</div>
             </div>

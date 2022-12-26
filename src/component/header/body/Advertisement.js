@@ -123,9 +123,9 @@ const Advertisement = ({products,title,timer}) => {
         slidesToShow={7}
         {...settings}
       >
-        {products.map((item) => {
+        {products.map((item,idx) => {
           return (
-            <Link to={`product/${item.id}`}>
+            <Link to={`product/${item.id}`} key={idx}>
             <div className="carousel-item">
               <Cart item={item}/>
             </div>

@@ -31,9 +31,9 @@ const Carousel = () => {
         prevArrow={<PreviousBtn/>}
         nextArrow={<NextBtn/>}
       >
-        {bannerData.map((item) => {
+        {bannerData.map((item,idx) => {
           return (
-            <div>
+            <div key={idx}>
               <img src={item.url} alt="" />
             </div>
           );
